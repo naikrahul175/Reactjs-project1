@@ -1,0 +1,156 @@
+.postPop{
+    /* margin-top:20%; */
+    background-color: white;
+    width: 700px;
+    margin: 40px auto;
+    position: relative;
+    /* transform: translatey(-20%); */
+    padding:0px;
+    border-radius: 5px;
+    outline:none;
+}
+.postHeading{
+    display:flex;
+    border-bottom: 1px solid;
+    padding: 5px 10px;
+    background-color:lightblue;
+}
+.postHeadingleft a{
+    color:black;
+    text-decoration:none;
+    align-items: center;
+
+    padding-right: 20px;
+    top: 0px;
+     
+}
+.postHeading .MuiIconButton-root{
+    position:absolute;
+    top:0px;
+   right:10px;
+
+}
+
+.postTop{
+    display:flex;
+    padding:15px 10px;
+    align-items: center;
+}
+
+.postBody textarea{
+    width: 100%;
+    min-height: 10px;
+    border:0px;
+    outline: 0px;
+    font-size: 25px;
+    padding-top: 10px 0px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.postFooter{
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    /* border-radius: 10px; */
+    margin-bottom: 10px;
+    padding: 0px 5px;
+    background-color:lightblue;
+   
+}
+/* .post_submit{
+    width:100%;
+    background-color: #2391fa;
+    padding: 10px 20px;
+    color: white;
+    border:0px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    outline: 0px;
+    font-size: 20px;
+    cursor:pointer; 
+}*/
+ 
+ .icon {
+    /* display: flex;
+    padding: 5px;
+    min-width: 40px; */
+
+    position: absolute;
+    margin-top: 15px;
+    width: 15px;
+    padding: 2px;
+    padding-left: 5px;
+    /* margin-left: -0px; */
+
+ }
+
+ /* .icon .MuiSvgIcon-root{
+    width: 50px;
+    margin-left: 10px;
+ } */
+
+ .post_button{
+  /* width:100px;
+    padding-top: 10px;
+    text-align: center; */
+
+    width: 50%;
+    padding: 2px 30px;
+}
+
+.post_submit{
+    width:100px;
+    background-color:#2391fa;
+    border: 0px;
+    font-size: 20px;
+    cursor:pointer; 
+    padding-right: 10px;
+    margin-left: 10px;
+    margin:10px;
+}
+.postBottom{
+    display: flex;
+    justify-content:space-between;
+    margin: 10px 40px;
+}
+
+.post-button{
+ width:300px;
+ height:40px;
+ border-radius: 20px;
+ border:none;
+ outline: none;
+ text-align: left;
+padding-left: 40px;
+}
+
+.postBottomLeft .leftOption{
+margin-bottom: 10px;
+}
+
+.postBottomRight .rightOption{
+    margin-bottom: 10px;
+    }
+
+.leftOption{
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+.leftOption svg{
+    position: absolute;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+ .rightOption{
+    display: flex;
+    align-items: center;
+ }
+ .rightOption svg{
+    position: absolute;
+    justify-content: center;
+    margin-left: 10px;
+}
