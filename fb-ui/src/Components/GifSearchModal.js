@@ -1,7 +1,5 @@
 import React from 'react';
-
-import "../Css/GifSearchModal.css";
-
+import "../Css/gifSearchModal.css";
 
 export const GifSearchModal = ({gifLinks,handleImageClick,handleSearch}) =>{
     return (
@@ -25,6 +23,5 @@ export const GifSearchModal = ({gifLinks,handleImageClick,handleSearch}) =>{
                </div>
       </div>
 )}
- {/* <p>posted message</p> */}
 </>
 )}

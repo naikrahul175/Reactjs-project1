@@ -1,10 +1,9 @@
 import React,{useState} from "react";
 import "../Css/post.css";
-import { Avatar, Modal, Icon, IconButton } from "@mui/material";
+import { Avatar,Icon, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import VideoCallIcon from "@mui/icons-material/VideoCall";
-import SentimentSatisfiedAltIcon from "@mui/icons-material/SentimentSatisfiedAlt";
 import CreateIcon from "@mui/icons-material/Create";
 import HttpsIcon from "@mui/icons-material/Https";
 import PersonAddAlt1Icon from "@mui/icons-material/PersonAddAlt1";
@@ -14,44 +13,32 @@ import EventNoteIcon from "@mui/icons-material/EventNote";
 
 
 export const Post = (props) => {
-  
   return (
-    <div className="postmsg">
-      {/* <Modal open={true} onClose={handleClose}> */}
+    <div className="post">
         <div className="postPop">
-          <form >
+          <form onSubmit={props.submitPost}>
             <div className="postHeading">
               <div className="postHeadingleft">
-                <CreateIcon />{" "}
-                <a href="#" className="heading">
-                  Compose Post
-                </a>
+                <CreateIcon /> <a href="#" className="heading"> Compose Post </a>
               </div>
               <div className="postHeadingleft">
-                <CollectionsIcon />{" "}
-                <a href="#" className="heading">
-                  Photo/Video Album
-                </a>
+                <CollectionsIcon /> <a href="#" className="heading"> Photo/Video Album </a>
               </div>
               <div className="postHeadingleft">
-                <VideoCallIcon />{" "}
-                <a href="#" className="heading">
-                  Live Video
-                </a>
+                <VideoCallIcon /> <a href="#" className="heading"> Live Video </a>
               </div>
               <div className="postHeadingRight">
-                <IconButton >
-                  <CloseIcon />
-                </IconButton>
+                <IconButton > <CloseIcon /> </IconButton>
               </div>
             </div>
+
             <div className="postTop">
               <Avatar />
-              {/* <h5> rahul naik</h5> */}
             </div>
             <div className="postBody">
               <textarea rows="3" placeholder="Write something here... "  onChange={props.handleTextarea}/>
             </div>
+
             <div className="postBottom">
               <div className="postBottomLeft">
                 <div className="leftOption">
@@ -62,8 +49,8 @@ export const Post = (props) => {
                   <GifBoxIcon style={{color:'grey',width:'20px'}}/>
                 <button className="post-button"  type="button" onClick={props.fetchData} >GIF </button>  
                 </div>
-              
               </div>
+
               <div className="postBottomRight">
                 <div className="rightOption">
                   <LocationOnIcon style={{color:'red',width:'20px'}}/>
@@ -75,6 +62,7 @@ export const Post = (props) => {
                 </div>
               </div>
             </div>
+
             <div className="postFooter">
               <div className="postFoterLeft">
                 {/* <h5>Add to your post</h5> */}
@@ -82,13 +70,11 @@ export const Post = (props) => {
               <div className="postFoterRight">
                 <HttpsIcon className="icon" />{" "}
                 <input type="button" className="post_button" value="Only me" />
-                {/* <input type="button" className="post_button" value="Only me" placeholder={ <HttpsIcon/> }/>  */}
                 <input type="submit" className="post_submit" value="Post" />
               </div>
             </div>
           </form>
         </div>
-      {/* </post> */}
     </div>
   )
 }

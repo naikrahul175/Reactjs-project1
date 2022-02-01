@@ -1,0 +1,26 @@
+.postMessage{
+    margin: 8em;
+    margin-top: 5em;
+    background-color: white;
+    border: 1px solid wheat;
+}
+
+.postMessage .messageHeader{
+    margin-left: 5px;
+    /* display:flex; */
+    padding:10px 10px;
+    /* align-items: center; */
+    border-bottom: 0.3px solid white;
+}
+
+.messageBody p{
+margin-left: 10px;
+/* font-weight: bold; */
+margin: 6px;
+}
+
+.gif img{
+    height: 50%;
+    width: 100%;
+}
+
