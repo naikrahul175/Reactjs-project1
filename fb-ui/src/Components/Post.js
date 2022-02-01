@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "../Css/post.css";
 import { Avatar, Modal, Icon, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
@@ -14,6 +14,7 @@ import EventNoteIcon from "@mui/icons-material/EventNote";
 
 
 export const Post = (props) => {
+  
   return (
     <div className="postmsg">
       {/* <Modal open={true} onClose={handleClose}> */}
@@ -49,7 +50,7 @@ export const Post = (props) => {
               {/* <h5> rahul naik</h5> */}
             </div>
             <div className="postBody">
-              <textarea rows="3" placeholder="Write something here... " />
+              <textarea rows="3" placeholder="Write something here... "  onChange={props.handleTextarea}/>
             </div>
             <div className="postBottom">
               <div className="postBottomLeft">
