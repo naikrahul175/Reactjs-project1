@@ -16,7 +16,8 @@ export const PostMessage = ({postMsg, gifLinks}) => {
                            { el.id == postMsg.imageId ?
                               <img src={el.images.fixed_height.url} style={{color:"red"}} alt="gif" />
                            :
-                            console.log("id is not matched")
+                           // console.log("id is not matched")
+                         ""
                             }  
                         </div>
                      )
